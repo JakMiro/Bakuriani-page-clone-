@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.flex-container {
+    display: flex;
+    padding-left: 130px;
+    padding-right: 130px;
+    width: 100%;
+}
+.main-container {
+    display: flex;
+    width: 100%;
+}
+.material-symbols-outlined {
+    display: none;
+}
+header {
+    width: 100%;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+nav {
+    width: 100%;
+}
+.menu {
+    padding: 10px;
+    justify-content: center;
+    gap: 5%;
+    display: flex;
+    background-image: linear-gradient(rgb(9, 71, 133), rgb(5, 81, 159));
+    margin-bottom: 1rem;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+section {
+    width: 100%;
+}
+.sec1 {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec1 .main2 h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+.sec1 .main2 h2 {
+    font-size: 15px;
+    text-align: end;
+    color: red;
+}
+iframe {
+    width: 100%;
+    height: 50rem;
+}
+.sec3 {
+    justify-content: space-between;
+}
+table {
+    border-collapse: collapse;
+    width: 30%;
+    height: 150px;
+}
+td,th {
+    border: 1px solid red;
+    padding: 10px;
+}
+.sec3 .main2 {
+    font-size: 15px;
+}
+.latest {
+  padding-bottom: 14px;
+  font-size: 25px;
+}
+
+.more {
+  font-size: 10px;
+  text-align: end;
+  cursor: pointer;
+  color: rgb(237, 55, 61);
+}
+
+.post {
+  font-size: 20px;
+}
+.main3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main3 input {
+  padding: 6px;
+  font-size: 18px;
+}
+.main3 textarea {
+  padding: 5px;
+  font-size: 18px;
+}
+.main3 button {
+  font-size: 16px;
+  padding: 8px;
+  letter-spacing: 1.1px;
+  border-radius: 3px;
+}
+footer {
+    width: 100%;
+    margin-top: 1rem;
+}
+.footer {
+    background-color: gray;
+    width: 100%;
+}
+
+@media (max-width:600px){
+    .sec1 {
+        flex-direction: column;
+        display: flex;
+    }
+    .sec3 {
+        flex-direction: column;
+        display: flex;
+    }
+    nav {
+        display: none;
+    }
+    .logo {
+        justify-content: space-between;
+    }
+    .material-symbols-outlined {
+        display: block;
+        font-size: 50px;
+    }
+    .sec1 .main1 img {
+        width: 600px;
+    }
+    .flex-container {
+        display: flex;
+        padding: 0;
+    }
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
